@@ -1,0 +1,277 @@
+/* FLEX-WRAP */
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(219, 219, 219);
+}
+.text-center {
+  text-align: center;
+}
+
+.header {
+  margin: 7vh auto 2vh auto;
+}
+
+.footer {
+  margin: 2vh auto;
+}
+
+.footer img {
+  max-width: 5vw;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.main,
+.header,
+.footer {
+  width: 768px;
+}
+
+.main {
+  background-color: #fff;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 20px 70px 0 70px;
+}
+.d-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: start;
+}
+.gap-large {
+  gap: 50px;
+}
+.cell {
+  width: 55px;
+  height: 55px;
+  border: 1px solid black;
+  margin-right: 1rem;
+  background-size: cover;
+}
+.btn {
+  /* nazvati smislenije*/
+  width: 55px;
+  height: 55px;
+  background-size: cover;
+  margin-right: 15px;
+}
+.row {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.color-cell {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 1rem;
+}
+
+.color-cell-small {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 0;
+}
+
+.legend-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.legend-col:not(:last-child) {
+  margin-left: 30px;
+}
+
+.legend-col:last-child {
+  margin-left: 30px;
+}
+
+.legend-paragraph {
+  font-size: 1em;
+  margin-block-end: 5px;
+  margin-block-start: 5px;
+}
+
+.red,
+.green {
+  margin-bottom: 5px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.col-1 .row:last-child {
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.background-angular,
+.background-react,
+.background-javascript,
+.background-css {
+  cursor: pointer;
+}
+
+.background-angular {
+  background-image: url('../img/angular.png');
+}
+
+.background-css {
+  background-image: url('../img/css.png');
+}
+
+.background-javascript {
+  background-image: url('../img/javascript.png');
+}
+
+.background-react {
+  background-image: url('../img/react.png');
+}
+
+.disabled {
+  border-color: rgba(167, 162, 162, 0.678);
+}
+
+.focused {
+  box-shadow: inset 0 0 10px rgb(219, 219, 219);
+}
+
+.matching-green,
+.matching-red {
+  border-radius: 50%;
+}
+
+.matching-green {
+  background-color: green;
+}
+
+.matching-red {
+  background-color: red;
+}
+
+@keyframes addBackground {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.question-mark {
+  background-image: url('../img/question-mark.png');
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: flex-start;
+  height: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 20vmin);
+  justify-content: space-between;
+  max-width: 90vh;
+  column-gap: 50px;
+  grid-auto-rows: 10vmin;
+}
+
+.row .cell .active {
+  border: 1px solid red;
+}
+
+.active {
+  border: 5px solid green;
+}
+
+.hidden {
+  display: none;
+}
+.main img {
+  width: 240px;
+  height: 138px;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+.button-x {
+  font-size: 30px;
+  text-align: center;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.flex-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.btn-restart {
+  margin-top: 10px;
+  background-color: #f0a202;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  min-height: 30px;
+  min-width: 120px;
+  text-align: center;
+}
+
+.btn-restart:hover {
+  background-color: #0a0a23;
+  color: #fff;
+  font-weight: bold;
+}
